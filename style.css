@@ -1,0 +1,96 @@
+
+:root{
+    --branco: white;
+    --azul: #0D214F;
+    --roxo: #191970;
+    --cor-letra: black;
+    --cor-fundo: white;
+    --fundo-resposta: white;
+    --letra-reposta: black ;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+     .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 6em 0 0 0 ;
+    }
+
+    #informativo{
+        display: none;
+    }
+
+    #btn_mais{
+        width: 1em;
+        height: 0.5em;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 0 1em 0;
+    }
+
+
+    .formulario{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: var(--cor-fundo);
+        color: var(--cor-letra);
+        margin: 4em 0 0 0;
+    }
+
+    .preencher{
+        margin: 0;
+        padding: 0 0 0.1em 0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .form_input{
+        padding: 0.2em 0.5em;
+        text-align: center;
+        color: var(--cor-letra);
+    }
+
+    #resposta{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 18vw;
+        height: 10vh;   
+        margin: 1em 0 0 0 ;
+        padding: 2em 1em;
+        text-align: center;
+        color: var(--letra-reposta);
+        background: var(--fundo-resposta);
+        border-radius: 1em;
+        border: 0.5px black solid;
+
+    }
+
+    #btn_calcular{
+        margin: 0;
+        padding: 0.1em;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+ @media (max-width: 1000px){
+
+    .titulo{
+        margin: 3em 0 0 0;
+    }
+
+    #resposta{
+        width: 80%;
+        height: 20%;
+    }
+ }
