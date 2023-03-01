@@ -19,11 +19,11 @@ btnCalcular.addEventListener('click', Calcular)
     }
 
     function Calcular(){
-    let valorCompra = document.getElementById('valorCompra').valueAsNumber
-    let valorFinanciamento = document.getElementById('valorFinanciamento').valueAsNumber
-    let maximoFinanciamento = valorCompra * 0.8;
-    let documentacao = valorFinanciamento/105*5
-    let vendedor = valorFinanciamento - documentacao
+    const valorCompra = document.getElementById('valorCompra').valueAsNumber
+    const valorFinanciamento = document.getElementById('valorFinanciamento').valueAsNumber
+    const maximoFinanciamento = valorCompra * 0.8;
+    const documentacao = valorFinanciamento/105*5
+    const vendedor = valorFinanciamento - documentacao
     let modificaDinheiroReal = (valor) => {return valor.toLocaleString('pt-br',{style:'currency', currency:'BRL'});}
 
     resposta.style.display="flex";
