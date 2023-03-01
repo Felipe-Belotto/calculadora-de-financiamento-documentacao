@@ -18,8 +18,6 @@ btnCalcular.addEventListener('click', Calcular)
         
     }
 
-   
-
     function Calcular(){
     let valorCompra = document.getElementById('valorCompra').valueAsNumber
     let valorFinanciamento = document.getElementById('valorFinanciamento').valueAsNumber
